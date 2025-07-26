@@ -52,3 +52,7 @@ This project exemplifies a practical blend of AI, computer vision, and assistive
 
 
 <img width="1855" height="961" alt="Screenshot 2025-07-27 002626" src="https://github.com/user-attachments/assets/63b9a8da-b824-4011-b40e-c5b3a919c6d6" />
+<img width="1845" height="890" alt="Screenshot 2025-07-27 002637" src="https://github.com/user-attachments/assets/ef5eea67-6892-48ce-914d-6b7ce3ad499c" />
+<img width="1845" height="890" alt="Screenshot 2025-07-27 002646" src="https://github.com/user-attachments/assets/bca34fcb-a740-4e9a-b080-f2195c68e759" />
+<img width="1845" height="890" alt="Screenshot 2025-07-27 002656" src="https://github.com/user-attachments/assets/946e45bf-7c19-478c-bc6a-2202d4bdf86a" />
+<img width="1845" height="890" alt="Screenshot 2025-07-27 002709" src="https://github.com/user-attachments/assets/c85632cd-39f1-4637-b457-4bf048bef575" />
