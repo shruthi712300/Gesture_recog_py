@@ -49,3 +49,6 @@ The system is built and tested on `localhost:8501`, implying it's developed usin
 ---
 
 This project exemplifies a practical blend of AI, computer vision, and assistive technology aimed at improving emergency responsiveness and personal safety, especially for individuals with communication limitations or medical conditions.
+
+
+<img width="1855" height="961" alt="Screenshot 2025-07-27 002626" src="https://github.com/user-attachments/assets/63b9a8da-b824-4011-b40e-c5b3a919c6d6" />
