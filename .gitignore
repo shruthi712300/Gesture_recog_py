@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+myenv/
+venv/
+ENV/
+
+# Large Files
+Prediction_Model.h5
+
+# OS generated files
+.DS_Store
+Thumbs.db

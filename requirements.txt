@@ -1,0 +1,12 @@
+## Python-only emergency console dependencies.
+streamlit>=1.30.0
+opencv-python>=4.8.0.0
+mediapipe>=0.10.0
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+requests>=2.31.0
+numpy>=1.24.0,<2.0.0
+playsound==1.2.2
+streamlit-webrtc>=0.47.0
+av>=11.0.0
+google-generativeai>=0.2.0

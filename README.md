@@ -1,58 +1,36 @@
 # Gesture_recog_py
- sign language recomendation system for deaf and dumb people
-## 🖐🎙 HoloSign – Real-Time Emergency & Medical Assistance System
 
-**HoloSign** is an innovative, real-time emergency response system designed to assist individuals in distress through intuitive gesture recognition, voice commands, and automated health alerts. Built with a clean, user-friendly interface, the system integrates multiple modules to enhance accessibility and ensure rapid response in critical situations.
+HoloSign is now a Python-only Streamlit app for emergency gesture detection, voice commands, TTS, alarm playback, and emergency chat.
 
-### 🔧 Key Features:
+## What it does
 
-1. **📸 Real-Time Gesture Detection**
+- Detects the defined hand gestures with MediaPipe.
+- Plays `Alarm.mp3` when `Alert (Fist)` or `Danger (Stop Gesture)` is detected.
+- Triggers a Bland AI call when `Call Guardian`, `Need Help (Open Palm)`, `Pain (Two Fingers)`, or `Need Assistance` is detected.
+- Listens for emergency voice keywords from the browser microphone.
+- Lets you type emergency text commands in the chat panel.
+- Shows live telemetry with the current gesture, sequence, urgency, and action.
 
-   * Utilizes a live camera to monitor hand gestures.
-   * Detects predefined emergency gestures to automatically trigger alerts.
-   * Initiates emergency protocols, including phone calls and alert sounds, without the need for verbal communication.
+## Gesture Map
 
-2. **🎙 Voice Assistant**
+- `Alert (Fist)` -> `0,0,0,0,0`
+- `Call Guardian` -> `1,0,0,0,1` or `0,0,0,0,1`
+- `Need Help (Open Palm)` -> `1,1,1,1,1`
+- `Pain (Two Fingers)` -> `0,1,1,0,0`
+- `Attention (One Finger)` -> `0,1,0,0,0`
+- `OK (Thumbs Up)` -> `1,0,0,0,0`
+- `Danger (Stop Gesture)` -> `0,1,1,1,1`
+- `Need Assistance` -> `0,1,1,1,0`
 
-   * Allows users to issue emergency commands using voice input.
-   * Ideal for scenarios where gesture-based control is not possible.
-   * "Tap to Speak" interface ensures simple and quick activation.
+## Run the app
 
-3. **💬 Emergency Chat**
+```powershell
+cd "C:\Users\Shruthi T\Desktop\Gesture_recog_py-main"
+pip install -r requirements.txt
+streamlit run Gesture.py
+```
 
-   * Enables users to send instant text-based emergency messages.
-   * Useful for silent communication during medical or safety emergencies.
-   * Features a clean and resettable chat interface.
+## Notes
 
-4. **🩺 Health Check-In**
-
-   * Collects key health vitals: blood pressure, blood sugar, and cholesterol levels.
-   * Allows users to monitor and log their health status.
-   * Provides context to emergency responders for faster assessment.
-
-5. **📄 Emergency Prompts**
-
-   * Offers pre-defined emergency messages for quick dispatch.
-   * Simplifies communication when time is critical or the user is unable to type or speak.
-
-### ⚙️ Automation Highlights:
-
-* **Automatic Phone Calls**: Triggered upon detecting a distress gesture.
-* **Alert Sound Activation**: Loud alerts are played automatically to draw attention and signal urgency.
-
----
-
-### 🌐 Deployment:
-
-The system is built and tested on `localhost:8501`, implying it's developed using frameworks like **Streamlit** for real-time web-based interactivity.
-
----
-
-This project exemplifies a practical blend of AI, computer vision, and assistive technology aimed at improving emergency responsiveness and personal safety, especially for individuals with communication limitations or medical conditions.
-
-
-<img width="1855" height="961" alt="Screenshot 2025-07-27 002626" src="https://github.com/user-attachments/assets/63b9a8da-b824-4011-b40e-c5b3a919c6d6" />
-<img width="1845" height="890" alt="Screenshot 2025-07-27 002637" src="https://github.com/user-attachments/assets/ef5eea67-6892-48ce-914d-6b7ce3ad499c" />
-<img width="1845" height="890" alt="Screenshot 2025-07-27 002646" src="https://github.com/user-attachments/assets/bca34fcb-a740-4e9a-b080-f2195c68e759" />
-<img width="1845" height="890" alt="Screenshot 2025-07-27 002656" src="https://github.com/user-attachments/assets/946e45bf-7c19-478c-bc6a-2202d4bdf86a" />
-<img width="1845" height="890" alt="Screenshot 2025-07-27 002709" src="https://github.com/user-attachments/assets/c85632cd-39f1-4637-b457-4bf048bef575" />
+- The React `frontend/` app has been retired.
+- `Gesture.py` is the active app and contains the UI and emergency logic in one place.
